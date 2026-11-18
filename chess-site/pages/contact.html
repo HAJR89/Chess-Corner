@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Chess Corner or ask to join the club.">
+  <title>Contact | Chess Corner</title>
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="pieces.html">Pieces</a>
+      <a href="rules.html">How to Play</a>
+      <a href="openings.html">Openings</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Chess Corner</h1>
+    <p>Want to join the club? Send us a message.</p>
+
+    <form action="#" method="post">
+      <p>
+        <label for="player">Your name</label><br>
+        <input
+          type="text"
+          id="player"
+          name="player"
+          placeholder="Enter your name"
+          autocomplete="name"
+          required
+        >
+      </p>
+
+      <p>
+        <label for="email">Email</label><br>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+          autocomplete="email"
+          required
+        >
+      </p>
+
+      <p>
+        <label for="level">Your level</label><br>
+        <select id="level" name="level" required>
+          <option value="" disabled selected>Select your level</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="msg">Message</label><br>
+        <textarea
+          id="msg"
+          name="msg"
+          rows="4"
+          cols="40"
+          placeholder="Tell us how we can help"
+          required
+        ></textarea>
+      </p>
+
+      <button type="submit">Send</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <h2>Email us</h2>
+    <p><a href="mailto:chess@chesscorner.com">chess@chesscorner.com</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Chess Corner</p>
+  </footer>
+</body>
+</html>
